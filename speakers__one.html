@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <div class="modal" id="modal">
+      <div class="modal__card">
+        <img src="./rasmlar/success.png" alt="" class="modal__img" />
+        <h2 class="modal__title">THANK YOU FOR YOUR ORDER</h2>
+        <p class="modal__text">
+          You will receive an email confirmation shortly.
+        </p>
+        <img src="./rasmlar/other__items.png" alt="" class="modal__pic" />
+        <button type="submit" class="modal__btn" onclick="closeModal()">
+          BACK TO HOME
+        </button>
+      </div>
+    </div>
+   
     <header class="header">
       <div class="header__wrapper">
         <div class="container">
@@ -78,7 +92,14 @@
                     alt=""
                     class="row__images"
                   />
-                  <a href="#" class="row__btn intro__btn"> add to card</a>
+                  <!-- <a href="#" class="row__btn intro__btn"> add to card</a> -->
+                  <button
+                  type="submit"
+                  class="intro__btn row__btn"
+                  onclick="openModal()"
+                >
+                  add to card
+                </button>
                 </div>
               </div>
             </div>
@@ -358,4 +379,14 @@
       </div>
     </footer>
   </body>
+  
+  <script>
+    let modal = document.getElementById("modal");
+    function openModal() {
+      modal.classList.add("open-modal");
+    }
+    function closeModal() {
+      modal.classList.remove("open-modal");
+    }
+  </script>
 </html>

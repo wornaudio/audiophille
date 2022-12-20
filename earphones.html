@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div class="modal" id="modal">
+      <div class="modal__card">
+        <img src="./rasmlar/success.png" alt="" class="modal__img" />
+        <h2 class="modal__title">THANK YOU FOR YOUR ORDER</h2>
+        <p class="modal__text">
+          You will receive an email confirmation shortly.
+        </p>
+        <img src="./rasmlar/other__items.png" alt="" class="modal__pic" />
+        <button type="submit" class="modal__btn" onclick="closeModal()">
+          BACK TO HOME
+        </button>
+      </div>
+    </div>
+
     <header class="header">
       <div class="header__wrapper">
         <div class="container">
@@ -71,7 +85,14 @@
                 high-fidelity sound even in noisy environments with its active
                 noise cancellation feature.
               </p>
-              <a href="#" class="mark__btn intro__btn">See Product</a>
+              <!-- <a href="#" class="mark__btn intro__btn">See Product</a> -->
+              <button
+                type="submit"
+                class="intro__btn row__btn"
+                onclick="openModal()"
+              >
+                add to card
+              </button>
             </div>
           </div>
         </div>
@@ -226,5 +247,15 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      let modal = document.getElementById("modal");
+      function openModal() {
+        modal.classList.add("open-modal");
+      }
+      function closeModal() {
+        modal.classList.remove("open-modal");
+      }
+    </script>
   </body>
 </html>

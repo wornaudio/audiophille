@@ -31,7 +31,7 @@
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
-    width: 600px;
+    // width: 600px;
     height: 550px;
     background-color: #fff;
     border-radius: 6px;
@@ -134,7 +134,7 @@
     .modal{
         &__card
         {
-            width: 400px;
+          width: 360;
             height: 450px;
             gap: 10;
         }
