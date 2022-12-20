@@ -1,0 +1,79 @@
+.spaeker-table {
+  background-color: #fff;
+
+  &__wrapper {
+    background-image: url(/rasmlar/speaker__Bitmap.png);
+    background-size: cover;
+    width: 1110px;
+    height: 320px;
+    border-radius: 10px;
+  }
+
+  &__left {
+    max-width: 204px;
+    padding: 100px;
+  }
+
+  &__title {
+    padding-bottom: 40px;
+    max-width: 204px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #000000;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .spaeker-table {
+    &__wrapper {
+      position: relative;
+      right: 120px;
+      bottom: 100px;
+      top: 20px;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 950px;
+      height: 320px;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .spaeker-table {
+    &__wrapper {
+      position: relative;
+      right: 120px;
+      bottom: 100px;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 680px;
+      height: 320px;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .spaeker-table {
+    &__wrapper {
+      background-position: right right;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 333px;
+      height: 320px;
+    }
+
+    &__left {
+      width: 304px;
+      max-height: 118px;
+      padding: 99px 101px 99px 24px;
+    }
+
+  }
+}

@@ -1,0 +1,124 @@
+.intro {
+  background-color: rgb(19, 18, 18);
+
+  // background-image: url(/rasmlar/home__bitmap.png);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+  }
+
+  &__product {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  &__title {
+    max-width: 400px;
+    padding: 24px 0;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__text {
+    padding-bottom: 60px;
+    max-width: 350px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+  }
+
+  &__btn {
+    background: #bf6530;
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    &:hover {
+      background: #fbaf85;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+@media only screen and (max-width:1024px){
+  .intro{
+    &__wrapper
+    {
+      gap: 0;
+      background-size: contain;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .intro {
+    &__wrapper {
+      flex-direction: column;
+      gap: 0;
+      background-image: url(/rasmlar/noushnik.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    &__right {
+      display: none;
+    }
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    &__product {
+      font-size: 14px;
+      line-height: 19px;
+    }
+    &__title {
+      max-width: 377px;
+      font-size: 50px;
+      line-height: 50px;
+    }
+    &__text {
+      max-width: 340px;
+      font-size: 15px;
+      line-height: 25px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .intro {
+
+    &__title {
+      width: 377px;
+      font-size: 36px;
+      line-height: 40px;
+    }
+    &__left
+    {
+      background-image: url(/rasmlar/noushnik.png);
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+}

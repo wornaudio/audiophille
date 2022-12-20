@@ -1,0 +1,95 @@
+.headphone {
+  background-color: #fff;
+
+  &__cards {
+    display: flex;
+    gap: 30px;
+    padding-top: 200px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 350px;
+    height: 204px;
+    background: #f1f1f1;
+    border-radius: 8px;
+  }
+  &__img {
+    position: relative;
+    top: -60px;
+  }
+
+  &__title {
+    padding-bottom: 15px;
+    max-width: 150px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 1.28571px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headphone {
+    &__cards {
+      padding-top: 90px;
+      padding-bottom: 120px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    &__card {
+      max-width: 230px;
+      padding: 50px;
+    }
+
+    &__title {
+      width: 110px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    &__text {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .headphone {
+    &__cards {
+      flex-direction: column;
+      gap: 80px;
+    }
+
+    &__card {
+      max-width: 330px;
+      height: 204px;
+    }
+  }
+}
