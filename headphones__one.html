@@ -78,7 +78,8 @@
                     alt=""
                     class="row__images"
                   />
-                  <a href="#" class="row__btn intro__btn"> add to card</a>
+                  <!-- <a href="#" class="row__btn intro__btn"> add to card</a> -->
+                  <button type="submit" class="row__btn intro__btn" onclick="openModal()"> add to card</button>
                 </div>
               </div>
             </div>
@@ -350,5 +351,21 @@
         </div>
       </div>
     </footer>
+    <modal>
+      <div class="modal" id="modal">
+        <h2 class="modal__title">hello</h2>
+        <p class="modal__text">Your details has been success submited</p>
+        <button class="modal__btn" type="button" onclick="closeModal()">Ok</button>
+      </div>
+    </modal>
+    <script>
+      let modal = document.getElementById("modal");
+      function openModal(){
+        modal.classList.add("open-modal");
+      }
+      function closeModal(){
+        modal.classList.remove("open-modal");
+      }
+    </script>
   </body>
 </html>
