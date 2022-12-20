@@ -21,16 +21,16 @@ body {
   padding: 40px 160px;
   margin: 0 auto;
 
-  // &__options {
-  //   // width: 1440px;
-  //   // margin: 0 auto;
-  // }
+
 }
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
+}
+button{
+  border: none;
 }
 
 @media only screen and ( max-widhth:768px){
