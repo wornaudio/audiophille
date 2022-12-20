@@ -1,0 +1,138 @@
+.footer {
+  background-color: rgb(19, 18, 18);
+
+  &__navbar {
+    border: none;
+  }
+
+  &__content {
+    display: flex;
+    gap: 470px;
+  }
+
+  &__text {
+    width: 540px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  &__media {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 70px;
+  }
+
+  &__copyright {
+    padding-top: 60px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer {
+    &__content {
+      display: flex;
+      gap: 50px;
+    }
+    &__text {
+      width: 700px;
+    }
+
+    &__media {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      // margin-top: 70px;
+    }
+    &__copyright {
+      padding-top: 60px;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 25px;
+      color: #ffffff;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer {
+    &__wrapper {
+      position: relative;
+      right: 100px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__list {
+      display: flex;
+      margin-top: -62px;
+    }
+
+    &__text {
+      width: 580px;
+    }
+
+    &__content {
+      gap: 0px;
+    }
+    &__media {
+      position: relative;
+      top: 105px;
+      left: 230px;
+    }
+  }
+}
+@media only screen and (max-width: 425px) {
+  .footer {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__navbar {
+      position: relative;
+      left: 100px;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__list {
+      flex-direction: column;
+      margin: 0;
+      gap: 10px;
+    }
+    &__media {
+      top: 50px;
+      left: 105px;
+    }
+    &__text {
+      position: relative;
+      left: -12px;
+      width: 330px;
+      text-align: center;
+    }
+    &__content {
+      flex-direction: column;
+    }
+    &__copyright {
+      position: relative;
+      bottom: 130px;
+      width: 320px;
+      left: 25px;
+    }
+  }
+}
